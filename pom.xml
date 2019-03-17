@@ -72,6 +72,12 @@
             <artifactId>hibernate-core</artifactId>
             <version>4.3.8.Final</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hibernate.validator/hibernate-validator -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>6.0.4.Final</version>
+        </dependency>
 
     </dependencies>
 

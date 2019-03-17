@@ -10,6 +10,8 @@
         Nome: <h:inputText
             value="#{pessoa.nome}"
             binding="#{pessoa.inputText}"
+            required="true"
+            requiredMessage="Informe o nome do Usuário"
     />
         <br/>
         <h:commandButton binding="#{pessoa.commandButton}"
