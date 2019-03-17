@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+    <title>Olá JSF</title>
+</h:head>
+<h:body>
+    <h:form>
+        <h1>Olá</h1>
+        Nome: <h:inputText
+            value="#{pessoa.nome}"
+            binding="#{pessoa.inputText}"
+    />
+        <br/>
+        <h:commandButton binding="#{pessoa.commandButton}"
+                         value="Adicionar Nome"
+                         action="#{pessoa.addNome}">
+        </h:commandButton>
+
+        <h:dataTable value="#{pessoa.nomes}" var="nome">
+            <h:column>
+                <h:outputLabel value="#{nome}"/>
+            </h:column>
+
+        </h:dataTable>
+    </h:form>
+</h:body>
+</html>
